@@ -1,0 +1,16 @@
+@import './../../../../assets/styles/00_base/variables';
+:host {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    h3 {
+        margin-bottom: 8px;
+        margin-top: 5px;
+        color: white;
+    }
+    h4 {
+        margin-top: 0px;
+        margin-bottom: 8px;
+        color: $font-secondary-color;
+    }
+}

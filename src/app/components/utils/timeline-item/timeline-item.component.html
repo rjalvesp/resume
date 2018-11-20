@@ -1,0 +1,8 @@
+<h3 class="rj-row">
+  {{value.from.format('MMM \'YY')}} - {{value.to? value.to.format('MMM \'YY') : 'present'}}
+</h3>
+<h4 class="rj-row">{{value.charge}} @ {{value.company}}</h4>
+<div class="rj-row" *ngIf="value.job">{{value.job}}</div>
+<ng-container *ngIf="value.tasks">
+  <app-task [value]="item" class="rj-row" *ngFor="let item of value.tasks"></app-task>
+</ng-container>

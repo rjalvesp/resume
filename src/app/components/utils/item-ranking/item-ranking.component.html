@@ -1,0 +1,10 @@
+<div class="rj-row pl8 pr8">
+  <small class="rj-col">{{value.name}}</small>
+  <div>
+    <ng-container *ngFor="let index of [1, 2, 3, 4, 5]">
+        <i class="fas fa-star color-yellow" *ngIf="(value.ranking + 0.5) > index" ></i>
+        <i class="fas fa-star-half-alt color-yellow" *ngIf="(value.ranking + 0.5) === index"></i>
+        <i class="far fa-star color-yellow" *ngIf="(value.ranking + 0.5) < index"></i>
+    </ng-container>
+  </div>
+</div>

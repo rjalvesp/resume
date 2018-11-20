@@ -1,0 +1,24 @@
+<div class="rj-row pb8" *ngIf="!value.title && value.from && value.to">
+    <i class="rj-row__marker fas fa-angle-right"></i>
+    <div>
+        <small class="decoration-underline rj-row">
+            {{value.from.format('MMM \'YY')}} - {{value.to? value.to.format('MMM \'YY') : 'present'}}
+        </small>
+        <small *ngFor="let item of value.description" class="rj-row">- {{item}}</small>
+    </div>
+</div>
+<div class="rj-row pb8" *ngIf="!value.title && !value.from && !value.to">
+    <i class="rj-row__marker fas fa-angle-right"></i>
+    <small *ngFor="let item of value.description">{{item}}</small>
+</div>
+<div *ngIf="value.title">
+    <div class="rj-row pb8">
+        <small class="decoration-underline rj-row">
+            {{value.title}}
+        </small>
+    </div>
+    <div class="rj-row pb8"  *ngFor="let item of value.description">
+        <i class="rj-row__marker fas fa-angle-right"></i>
+        <small>{{item}}</small>
+    </div>
+</div>

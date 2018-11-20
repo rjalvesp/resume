@@ -1,0 +1,19 @@
+@import './variables';
+.color-white {
+    color: #ffffff;
+}
+.color-yellow {
+    color: $font-yellow-color;
+}
+
+.decoration-underline {
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-title {
+    font-family: 'Caveat', cursive;
+}

@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/00_base/index.scss';
+@import './assets/styles/01_atoms/index.scss';
+@import './assets/styles/02_molecules/index.scss';
+@import './assets/styles/03_organisms/index.scss';
+// @import './assets/styles/00_base/index.scss';
+
+ng-scrollbar {
+    .ng-scrollbar-container {
+    }
+}

@@ -1,0 +1,10 @@
+<div class="rj-grid">
+    <div *ngFor="let item of me.skills" class="pb8">
+        <div class="text-center decoration-underline pb8">
+            {{item.title}}
+        </div>
+        <app-item-ranking *ngFor="let value of item.values" [value]="value">
+            
+        </app-item-ranking>
+    </div>
+</div>

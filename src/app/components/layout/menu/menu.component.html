@@ -1,0 +1,9 @@
+<section class="rj-menu"></section>
+<section class="rj-menu">
+  <div class="rj-menu__container">
+    <a *ngFor="let item of items" class="rj-menu__item" [attr.title]="item.name" [attr.href]="item.id">
+        <i [class]="item.icon"></i>
+      </a>
+  </div>
+</section>
+<section class="rj-menu"></section>
