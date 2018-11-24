@@ -1,0 +1,27 @@
+@import './../00_base/variables';
+.rj-menu {
+    margin: 10px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    .rj-menu__container {
+        padding: 10px 3px;
+        border: 2px solid white;
+        border-radius: 20px;
+        .rj-menu__item {
+            width: 30px;
+            padding: 5px 0px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            color: white;  
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+                color: $font-primary-color
+            }
+        }
+    }
+}
