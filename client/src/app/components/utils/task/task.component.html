@@ -2,7 +2,7 @@
     <i class="rj-row__marker fas fa-angle-right"></i>
     <div>
         <small class="decoration-underline rj-row">
-            {{value.from.format('MMM \'YY')}} - {{value.to? value.to.format('MMM \'YY') : 'present'}}
+            {{value.from | moment:'MMM \'YY'}} - {{value.to? (value.to | moment:'MMM \'YY') : 'present'}}
         </small>
         <small *ngFor="let item of value.description" class="rj-row">- {{item}}</small>
     </div>

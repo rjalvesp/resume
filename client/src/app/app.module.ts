@@ -13,6 +13,7 @@ import { EducationComponent } from './components/content/education/education.com
 import { SkillsComponent } from './components/content/skills/skills.component';
 import { ItemRankingComponent } from './components/utils/item-ranking/item-ranking.component';
 import { AboutMeComponent } from './components/content/about-me/about-me.component';
+import { MomentPipe } from './pipes/moment.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AboutMeComponent } from './components/content/about-me/about-me.compone
     EducationComponent,
     SkillsComponent,
     ItemRankingComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    MomentPipe
   ],
   imports: [
     BrowserModule

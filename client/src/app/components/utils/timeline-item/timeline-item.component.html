@@ -1,5 +1,5 @@
 <h3 class="rj-row">
-  {{value.from.format('MMM \'YY')}} - {{value.to? value.to.format('MMM \'YY') : 'present'}}
+  {{value.from | moment:'MMM \'YY'}} - {{value.to? (value.to | moment:'MMM \'YY') : 'present'}}
 </h3>
 <h4 class="rj-row">{{value.charge}} @ {{value.company}}</h4>
 <div class="rj-row" *ngIf="value.job">{{value.job}}</div>

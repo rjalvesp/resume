@@ -1,10 +1,10 @@
 import { IItemRanking } from "../interfaces/item-ranking.interface";
 
 export class ItemRanking {
-    name: string;
-    ranking: number;
+    name    : string;
+    ranking : number;
     constructor(json: IItemRanking){
-        this.name = json.name;
+        this.name    = json.name;
         this.ranking = json.ranking;
     }
 }
