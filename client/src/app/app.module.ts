@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ScrollbarModule } from 'ngx-scrollbar';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/layout/menu/menu.component';
@@ -31,8 +30,7 @@ import { AboutMeComponent } from './components/content/about-me/about-me.compone
     AboutMeComponent
   ],
   imports: [
-    BrowserModule,
-    ScrollbarModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

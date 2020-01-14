@@ -7,22 +7,16 @@ import { ItemRanking } from './item-ranking.class';
 import { FieldValue } from './field-value.class';
 
 export class Ramiro {
-    public static get fullname() : string {
-        return 'Rj Alves'
-    }
-    public static get dob() : string {
-        return '1989/04/21';
-    }
-    public static get age() : number {
-        return Moment().diff(Moment(Ramiro.dob), 'years');
-    }
+    public static get fullname() : string { return 'Rj Alves' }
+    public static get dob() : string { return '1989/04/21'; }
+    public static get age() : number { return Moment().diff(Moment(Ramiro.dob), 'years'); }
     public static get aboutMe() : FieldValue[] {
         return [
             new FieldValue('Bachelor Degree', 'Computer Scientist'),
-            // new FieldValue('Date of Birth', Ramiro.dob),
             new FieldValue('Certifications', 'CISCO CCNA'),
             new FieldValue('email', 'ramiroalves@gmail.com'),
-            new FieldValue('Hobbies', 'eSports / Music / Football')
+            new FieldValue('Hobbies', 'Bass Player / Football / eSports'),
+            new FieldValue('Experience', 'Since 2008')
         ]
     }
     public static get summary(): string[] {
@@ -73,6 +67,26 @@ export class Ramiro {
         return [
             new TimelineItem({
                 to: null,
+                from: Moment('2019/01/01'),
+                job: ``,
+                company: 'GLOBANT',
+                charge: 'Fullstack Senior Developer',
+                tasks: [
+                    new Task({
+                        from: null,
+                        to: null,
+                        title: 'Fullstack Senior Developer @ Presence PG',
+                        description: [
+                            'Worked enhancing Holdings Features in Ms Mobile product (Tablet and Phone apps)',
+                            'P2P Payments and Send Money With Zelle portal Planning and Implementation',
+                            'Currently Working in new MSO P2P Payments and Send Money With Zelle portal, Enrollment functions, data modeling, services development, UI Specs, between others',
+                            'Currently Working in Morgan Stanley’s Common UI Project.'
+                        ]
+                    })
+                ]
+            }),
+            new TimelineItem({
+                to: Moment('2018/12/31'),
                 from: Moment('2017/12/01'),
                 job: ``,
                 company: 'GLOBANT',
@@ -92,7 +106,7 @@ export class Ramiro {
                 ]
             }),
             new TimelineItem({
-                to: null,
+                to: Moment('2019/01/01'),
                 from: Moment('2016/07/01'),
                 job: `I've been working on myself as a Libero Developer with many actual
                 technologies such as Node.js frameworks, Angular, and Laravel for 5
@@ -300,6 +314,10 @@ export class Ramiro {
                         ranking: 4.5
                     }),
                     new ItemRanking({
+                        name: 'React',
+                        ranking: 4.5
+                    }),
+                    new ItemRanking({
                         name: 'Vue',
                         ranking: 4.0
                     }),
@@ -325,7 +343,7 @@ export class Ramiro {
                 title: 'Services',
                 values: [
                     new ItemRanking({
-                        name: 'Azure ServiceBus',
+                        name: 'Azure Service Bus',
                         ranking: 4.5
                     }),
                     new ItemRanking({
@@ -334,6 +352,10 @@ export class Ramiro {
                     }),
                     new ItemRanking({
                         name: 'AWS S3',
+                        ranking: 4.0
+                    }),
+                    new ItemRanking({
+                        name: 'AWS Lambda',
                         ranking: 4.0
                     }),
                     new ItemRanking({

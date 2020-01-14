@@ -1,33 +1,11 @@
-@import './../../../../assets/styles/00_base/variables';
 :host {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    margin: 30px 10px;
-    overflow: -webkit-paged-y;
-    margin-right: 10px;
-    
     h1 {
         a {
             text-decoration: none;
             color: white;
         }
-    }
-}
-
-.rj-container {
-    padding-right: 20px;
-}
-
-::ng-deep {
-    .custom-scrollbars {
-        background-color: $font-primary-color !important;
-
-        &:hover, &:active {
-            background-color: rgb(94, 175, 255) !important;
-        }
-    }
-    .rj-ng-container {
-        overflow-x: unset!important;
     }
 }

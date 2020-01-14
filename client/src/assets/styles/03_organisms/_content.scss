@@ -1,0 +1,13 @@
+.rj-main { 
+  width: 100%;
+  padding: 40px 20px;
+  height: 100vh;
+  overflow: auto;
+}
+
+@media print {
+  .rj-main { 
+    height: 100%;
+    overflow: unset;
+  }
+}

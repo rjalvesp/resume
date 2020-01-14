@@ -1,2 +1,8 @@
 @import './../00_base/variables';
 
+::-webkit-scrollbar       { width: 5px; }
+::-webkit-scrollbar-track { background: $scrollbar-track-color; }
+::-webkit-scrollbar-thumb { 
+  background: $scrollbar-handle-color; 
+  &:hover { background: $scrollbar-handle-hover-color; }
+}
